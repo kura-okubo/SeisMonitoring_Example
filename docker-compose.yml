@@ -1,0 +1,24 @@
+version: "3"
+services:
+  seismonitoring:
+
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    container_name: seismonitoring
+    
+    ports:
+      - 8888:8888
+    
+    volumes:
+      - ./data:/root/data
+      - ./code:/root/code
+
+    restart: always
+    stdin_open: true
+    tty: true
+
+    # search the path to jupyter in .julia/conda and launch the jupyter lab
+    command: /bin/bash -c 'echo `julia -e "using Conda; print(Conda.PREFIX)"` && ls -la ~ && 
+     `julia -e "import Conda; print(Conda.PREFIX)"`/bin/jupyter lab --ip=0.0.0.0 --allow-root --NotebookApp.token='' --notebook-dir=/root --no-browser'
