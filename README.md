@@ -2,7 +2,7 @@
 
 A minimal working example with a Jupyter notebook of the seismic noise processing using [SeisMonitoring.jl](https://github.com/kura-okubo/SeisMonitoring.jl).
 
-<img src="./data/run_seismonitoring_demo_OUTPUT/plots/dvv/dvv_BP.EADB-BP.LCCB_13_0.9-1.2.png" alt="figure" width="900"/>
+<img src="./data/run_seismonitoring_demo_OUTPUT/plots/dvv/dvv_BP.EADB-BP.LCCB_13_0.9-1.2.png" alt="figure" width="700"/>
 
 View the notebook, click the badge:
 
@@ -12,11 +12,12 @@ View the notebook, click the badge:
       width="109" height="20">
 </a>
 <br>
+
 ## How to run the notebook
 
 We have two options to run this notebook.
 
-### Run using the docker container
+### 1. Run using the docker container
 We first recommend using the docker container, which does not contaminate your environment in the local machine.
 
 To run this notebook using docker,
@@ -27,14 +28,13 @@ To run this notebook using docker,
 
    You can configure them in the `settings` of the Docker Desktop. The required docker resources are the following:
 
-
-|     |     |
-| --- | --- |
-| CPUs | >=2 |
-| Memory | > 8GB |
-| Swap | > 1GB |
-| Disk image size | > 8GB |
-
+   | Resources    | Allocation |
+   | --- | --- |
+   | CPUs | >=2 |
+   | Memory | > 8GB |
+   | Swap | > 1GB |
+   | Disk image size | > 8GB |
+   
 
 2. **Launch the docker engine.**
 
@@ -68,13 +68,15 @@ To run this notebook using docker,
 
     Go to <a href="http://localhost:8888" target="_blank">http://localhost:8888</a> with your browser (e.g. Google Chrome) or type `open http://127.0.0.1:8888` in your terminal to open the JupyterLab. If succeeded, you will find the Launcher of the kernels.
 
-    <img src="./JupyterLab_seismonitoring.jpg" alt="JupyterLab_seismonitoring.jpg" width="550px"/>
+    <img src="./code/JupyterLab_seismonitoring.jpg" alt="JupyterLab_seismonitoring.jpg" width="750px"/>
 
     Go to the `code` directory, and open `run_seismonitoring.ipynb`.
 
-### Run in your own environment
+### 2. Run in the local environment
 
 You can run this notebook by installing Julia in your local environment instead of using the docker container.
+
+**NOTE:** This may modify your Julia environment, so please use the docker if you want to keep your packages.
 
 Try the following steps:
 
@@ -137,9 +139,5 @@ Try the following steps:
 This repository does not support the binder to simplify the building of container with the docker file.
 
 After open the notebook, you can `Run All Cells` to run the noise processings.
-
-## Licence
-
-MIT License
 
 ## Reference
