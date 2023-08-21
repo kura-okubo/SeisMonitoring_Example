@@ -28,7 +28,7 @@ To run this notebook using docker,
 
 1. **Install the docker engine on your machine.**
 
-    <a href="https://docs.docker.com/engine/install" target="_blank">See the official documentation for the installation.</a> The Docker Desktop is useful in general machines like Windows, Linux, and Mac OS. We developed this notebook using MacOS with both M1 and Intel chips.
+    <a href="https://docs.docker.com/engine/install" target="_blank">See the official documentation for the installation.</a> The Docker Desktop is useful in general machines like Windows, Linux, and Mac OS. We developed this notebook using MacOS with both M1 (Monterey 12.6.7) and Intel (Ventura 13.4.1) chips. We have also tested this notebook with Windows 10 using Docker Desktop. You need to set up the [WSL2](https://docs.docker.com/desktop/wsl/) to run the docker engine.
 
    You can configure them in the `settings` of the Docker Desktop. The required docker resources are the following:
 
@@ -40,13 +40,13 @@ To run this notebook using docker,
    | Disk image size | > 8GB |
 
 
-2. **Launch the docker engine.**
+3. **Launch the docker engine.**
 
    Type `docker ps` in the terminal to check if the docker command works.
    if you get the error like `Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?`,
    the docker engine is not likely to be ready. Check the status of Docker desktop.
 
-3. **Download the example repository, and build the docker container.**
+4. **Download the example repository, and build the docker container.**
 
    Type the commands below to build the docker container in your machine.
 
@@ -56,6 +56,8 @@ To run this notebook using docker,
     docker compose up -d
     ```
 
+   **NOTE:** For Windows users, `git clone` may fail as some of the file name contains a colon. Type `cd SeisMonitoring_Example; git restore --source=HEAD :/` to restore the docker files.
+    
    The JupyterLab server automatically starts in the container when you start it following the description written in `docker-compose.yml`. Type
    ```
    docker compose ps
@@ -68,7 +70,7 @@ To run this notebook using docker,
 
    We use the docker image of **Julia v1.9.2**, which is the latest version as of August 2023.
 
-4. **Launch the JupyterLab in your web browser.**
+6. **Launch the JupyterLab in your web browser.**
 
     Go to <a href="http://localhost:8888" target="_blank">http://localhost:8888</a> with your browser (e.g. Google Chrome) or type `open http://127.0.0.1:8888` in your terminal to open the JupyterLab. If succeeded, you will find the Launcher of the kernels.
 
