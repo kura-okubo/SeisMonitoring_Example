@@ -11,7 +11,11 @@ View the notebook, click the badge:
       src="https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.png"
       width="109" height="20">
 </a>
-<br>
+<br><br>
+
+or read the QR code:
+
+<img src="./code/QRcode_seismonitoring_example.png" alt="QR" width="150"/>
 
 ## How to run the notebook
 
@@ -34,7 +38,7 @@ To run this notebook using docker,
    | Memory | > 8GB |
    | Swap | > 1GB |
    | Disk image size | > 8GB |
-   
+
 
 2. **Launch the docker engine.**
 
