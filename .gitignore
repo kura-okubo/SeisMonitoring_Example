@@ -1,5 +1,6 @@
 .DS_Store
 .ipynb_checkpoints
+data/run_seismonitoring_demo_INPUT
 data/run_seismonitoring_demo_OUTPUT/cc
 data/run_seismonitoring_demo_OUTPUT/cc_channel_collection
 data/run_seismonitoring_demo_OUTPUT/seismicdata
@@ -7,3 +8,4 @@ data/run_seismonitoring_demo_OUTPUT/stack
 data/run_seismonitoring_demo_OUTPUT/*.csv
 data/run_seismonitoring_demo_OUTPUT/*.jld2
 data/run_seismonitoring_demo_OUTPUT/*.txt
+data/run_seismonitoring_demo.csv
