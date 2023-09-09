@@ -2,6 +2,8 @@
 
 A minimal working example with a Jupyter notebook of the seismic noise processing using [SeisMonitoring.jl](https://github.com/kura-okubo/SeisMonitoring.jl).
 
+[![DOI](https://zenodo.org/badge/677587892.svg)](https://zenodo.org/badge/latestdoi/677587892)
+
 <img src="./data/run_seismonitoring_demo_OUTPUT/plots/dvv/dvv_BP.EADB-BP.LCCB_13_0.9-1.2.png" alt="figure" width="700"/>
 
 View the notebook, click the badge:
