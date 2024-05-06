@@ -149,3 +149,4 @@ This repository does not support the binder to simplify the building of containe
 After open the notebook, you can `Run All Cells` to run the noise processings.
 
 ## Reference
+Okubo, K., Delbridge, B. G., & Denolle, M. A. (2024). Monitoring velocity change over 20 years at Parkfield. Journal of Geophysical Research: Solid Earth, 129, e2023JB028084. https://doi.org/10.1029/2023JB028084
